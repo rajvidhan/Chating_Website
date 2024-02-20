@@ -6,7 +6,10 @@ import { allusersRoute,host } from '../utils/APIRoutes'
 import Contact from '../Components/Contact'
 import Welcome from '../Components/Welcome'
 import ChatContainer from '../Components/ChatContainer'
+
 import {io} from  "socket.io-client"
+
+
 const Chat = () => {
 
   const socket = useRef();
@@ -58,6 +61,7 @@ const handlechatchange=(chat)=>{
 
   return (
     <Container>
+     
     <div className="container">
       <Contact  contacts={contacts}
        currentuser= {currentuser}
@@ -75,18 +79,17 @@ const handlechatchange=(chat)=>{
 
 const Container = styled.div`
 height:100vh;
-width:100vw;
+width:100vh;
 display:flex;
-align-items:center;
+
 flex-direction:column;
-justify-content:center;
-background-color:#131324;
 
 .container{
-  height:85vh;
-  border-radius:20px;
-  width:85vw;
-  background-color:#00000076;
+  height:100vh;
+ 
+  width:100vw;
+  background-image:url('https://e1.pxfuel.com/desktop-wallpaper/461/478/desktop-wallpaper-whatsapp-dark-whatsapp-chat.jpg');
+
   display:grid;
   
   grid-template-columns:25% 75%;

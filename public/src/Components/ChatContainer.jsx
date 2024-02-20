@@ -117,6 +117,7 @@ export default ChatContainer
 const Container = styled.div`
 padding-top:1rem;
 display:grid;
+
 grid-template-rows:10% 78% 12%;
 gap:0.1rem;
 overflow:hidden;
@@ -136,7 +137,7 @@ overflow:hidden;
     .out{
       @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         // display:none;
-        eight:10px;
+        height:10px;
       }
      cursor : pointer;
      height:2rem;
