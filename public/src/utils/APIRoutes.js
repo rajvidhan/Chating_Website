@@ -5,4 +5,3 @@ export const setAvtarRoute = `${host}/api/auth/setAvtar`;
 export const  allusersRoute = `${host}/api/auth/allusers`;
 export const sendMessageRoute = `${host}/api/messages/addmsg`;
 export const getAllMessagesRoute = `${host}/api/messages/getmsg`;
-
