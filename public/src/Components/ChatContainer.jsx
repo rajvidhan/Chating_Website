@@ -87,9 +87,8 @@ const ChatContainer = ({ currentchat, currentuser, socket }) => {
               <h3 className="text-2xl text-white">{currentchat.username}</h3>
             </div>
             <div className="flex text-3xl gap-9 cursor-pointer  text-richblack-300 items-center justidy-center ">
-              <IoIosCall />
-              <FaVideo />
-              <IoSettings />
+              <Logout />
+              
             </div>
           </div>
 
