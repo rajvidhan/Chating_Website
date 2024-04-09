@@ -17,10 +17,9 @@ app.use("/api/auth",userRoutes);
 app.use("/api/messages",messageRoute);
 
 
-mongoose.connect("mongodb://0.0.0.0:27017/chat",{useNewUrlParser:true})
+mongoose.connect(process.env.MONGO_URL,{useNewUrlParser:true})
 .then(()=> console.log("hello connect ho gya hu bhai"))
 .catch((err)=> console.log("nhi hu bhai dekhle connect or ye dekh error "+ " "+ err));
-
 const server = app.listen(port,()=>{
     console.log(`the surver is running on : ${port}`);
 });
